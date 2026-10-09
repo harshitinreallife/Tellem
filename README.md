@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Tell’em 💬**
 
-## Getting Started
+**Your space. Your voice. Your anonymity.**
 
-First, run the development server:
+Tell’em is an anonymous messaging web application that allows users to receive messages without revealing the sender's identity. Users can create their own profiles, share their profile links through social media, and receive anonymous messages from friends or anyone with access to their link.
+
+🌐 **Live Demo:** https://tellem.live
+
+## ✨ Features
+
+* **User Authentication:** Secured sign-up,verify email and sign-in using credentials.
+* **Anonymous Messaging:** Send messages anonymously to other users  and receive messages by sharing your unique public profile link.
+* **Personalized Profiles:** Each user has a unique username and public messaging url.
+* **Message Management:** View and delete received messages.
+* **Message Acceptance Controls:** Enable or disable incoming messages.
+* **Shareable Profile Links:** Share your profile link to receive anonymous messages.
+* **AI-Powered Suggestions:** Generate message suggestions using AI.
+* **Responsive Design:** Clean interface designed for desktop, tablet, and mobile devices.
+* **Protected Routes:** Restrict access to authenticated areas of the application.
+
+## 🛠️ Tech Stack
+
+* Next.js [app router]
+* React
+* TypeScript
+* Tailwind CSS
+* MongoDB
+* NextAuth
+* Zod for validation
+* shad cn ui 
+* React Hook Form
+* GSAP for smooth animations
+* AI SDK/Gemini for AI-Powered Suggestions 
+* Brevo SMTP for sending emails
+* Vercel for deployment
+* Git & GitHub for version control
+
+
+
+## 🚀 Getting Started
+
+Follow these steps to run Tell’em locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* Node.js
+* npm
+* Git
+* A MongoDB database
+
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/harshitinreallife/Tellem.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file in the root directory.
+
+Add the environment variables required by your application:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+
+NEXTAUTH_SECRET=your_nextauth_secret
+
+NEXTAUTH_URL=http://localhost:3000
+
+GOOGLE_AI_KEY=your_google_ai_api_key
+
+BREVO_SMTP_USER=your_brevo_smtp_user
+
+BREVO_SMTP_PASS=your_brevo_smtp_pass
+
+EMAIL_FROM=your_email_from
+```
+
+Configure your Brevo SMTP credentials using the exact variable names expected by your application's email configuration.
+
+
+**Important:** Replace the example values with your own credentials. Never commit `.env.local` or expose API keys, database credentials, SMTP passwords, or authentication secrets in your repository.
+
+### 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌍 Deployment
 
-## Deploy on Vercel
+Tell’em is deployed on Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Visit the live application:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**https://tellem.live**
+
+
+## 🔮 Future Improvements
+
+* Google OAuth sign-in and registration
+* Improved user profile customization
+* Enhanced message filtering and moderation
+* Additional AI-powered features
+
+
+**Built with ❤️ using Next.js and TypeScript.**
