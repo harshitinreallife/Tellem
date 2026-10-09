@@ -112,7 +112,7 @@ export default function Home() {
             duration: 1,
             stagger: 0.1,
             ease: "power3.out",
-          })
+          },"-=1")
 
           .to(".hero-right img",
             {
@@ -380,7 +380,7 @@ export default function Home() {
             </h1>
 
             {/* SIGN UP */}
-            <button type="button" className="hero-btn bg-white text-[#FD7A24] font-bold rounded-[50px] mx-auto w-52 sm:w-60 md:w-60 lg:w-65 xl:w-70 py-3.5 sm:py-4 md:py-3 md:mb-5 lg:py-4 xl:py-4 text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl mt-6 sm:mt-7 tracking-tight cursor-pointer hover:text-[#ED1C7D]"onClick={handleSignUp}>
+            <button type="button" className="hero-btn bg-white text-[#780c3e] font-bold rounded-[50px] mx-auto w-52 sm:w-60 md:w-60 lg:w-65 xl:w-70 py-3.5 sm:py-4 md:py-3 md:mb-5 lg:py-4 xl:py-4 text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl mt-6 sm:mt-7 tracking-tight cursor-pointer hover:text-[#ed731c]"onClick={handleSignUp}>
               Sign Up!
             </button>
           </div>

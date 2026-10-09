@@ -15,7 +15,7 @@ export const emailValidation = z.string()
 export const passwordValidation = z.string()
     .min(8, "Password must be atleast 8 charecter long")
     .max(20, "Password must be less than 20 charecter long")
-    .regex(/^[a-zA-Z0-9_]+$/, "Password can only contain letters, numbers, and underscores")
+    .regex(/^[a-zA-Z0-9!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?`~]+$/,"Password can contain letters, numbers, and special characters")
 
 
 
